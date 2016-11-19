@@ -1,0 +1,60 @@
+/***************** FOOTER HOME **************/
+
+.footer-home {
+  background-color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.footer-home h3 {
+  color: #D1B182;
+}
+
+.footer-home p {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** FOOTER *****************/
+
+  .footer {
+    background: darkgray;
+    color: white;
+    position: relative; left: 0; right: 0; bottom: 0px; width: 100%;
+    height: 100%;
+  }
+
+      /**** Logos links ****/
+
+      .list-inline .fa {
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: white;
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+
+      .fa:hover {
+        color: #D1B182;
+      }
+
+      .text-right {
+        margin-top: 20px;
+      }
+
+
+

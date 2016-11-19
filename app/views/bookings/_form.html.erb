@@ -1,0 +1,27 @@
+
+
+
+<%= simple_form_for(@booking) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+       <%= f.input :jour , :label => "Día" , as: :date %>
+           <%= f.input :heure, :label => "Hora" , :collection  => ['12:00', '12:30', '13:00' , '13:30' , '14:00' , '14:30' , '15:00' , '15:30' , '16:00' , '16:30', '17:00' , '17:30' , '18:00' , '18:30' , '19:00' , '19:30' , '20:00' , '20:30' , '21:00' , '21:30' , '22:00' , '22:30']  %>
+          <%= f.input :nombrep , :label => "Número de personas" , :collection  => ['1' , '2', '3' , '4', '5', '6', '7', '8', '9' , '10' , '11' , '12', '13', '14', '15', '16', '17' ,'18', '19' , '20', '21','22' , '23', '24', '25' , '26' , '27' , '28' ,'29' , '30' , '30+' ]   %>
+           <%= f.input :tel, :label => "Número de teléfono" %>
+
+
+
+    <%= f.input :name , :label => "Nombre" %>
+        <%= f.input :message , :label => "Mensaje",  as: :text, :input_html => { class: 'test', :cols => 25, :rows => 10 }  %>
+
+    <% f.association :table %>
+    <% f.association :user %>
+  </div>
+
+<br><br>
+
+  <div class="form-actions text-center">
+    <%= f.button :submit, class: "btn btn-default" %>
+  </div>
+<% end %>

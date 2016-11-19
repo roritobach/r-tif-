@@ -1,0 +1,67 @@
+/* Banner */
+
+.paula-banner-eventos {
+  background-image: url(http://res.cloudinary.com/roritobach/image/upload/v1479526030/IMG_4106_axth3n.jpg);
+  width: 100%;
+  height: 350px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+
+.paula-banner-eventos img {
+margin-top: -80px;
+width: 100%;
+
+}
+
+#title-eventos {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: white;
+  margin-top: -250px;
+  overflow:scroll;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.paula-banner-eventos .fa-angle-down {
+  color: white;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  margin-left: -200px;
+}
+
+
+
+
+
+
+/****** photos events *******/
+
+.eventos img {
+  height: 200px;
+}
+
+
+
+
+/******* text eventos *******/
+
+.eventos p  {
+  font-size: 17px;
+}
+
+
+
+#contactos-btn {
+  font-size:18px;
+  color: #D1B182;
+  text-decoration: underline;
+}
+
+#contactos-btn:hover {
+  text-decoration: none;
+  color: #D1B182;
+  font-size: 20px;
+}

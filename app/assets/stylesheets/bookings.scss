@@ -1,0 +1,64 @@
+/* Banner */
+
+.paula-banner-booking {
+  background-image: url(http://res.cloudinary.com/roritobach/image/upload/v1479526122/IMG_2006_v6ogyy.jpg);
+  width: 100%;
+  height: 350px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+
+.paula-banner-booking img {
+margin-top: -80px;
+width: 100%;
+
+}
+
+#title-booking {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: white;
+  margin-top: -250px;
+  overflow:scroll;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.paula-banner-booking .fa-angle-down {
+  color: white;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  margin-left: -200px;
+}
+
+
+
+
+
+
+
+
+.booking-form .form-actions .btn-default {
+  color: white;
+  background: gray;
+  font-weight: normal;
+  border: solid 2px #D1B182;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+
+
+#booking-h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.booking p {
+  color: #D1B182;
+}

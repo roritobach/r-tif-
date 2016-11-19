@@ -1,0 +1,80 @@
+
+/* Banner */
+
+.paula-banner-galeria {
+  background-image: url(http://res.cloudinary.com/roritobach/image/upload/v1479525913/IMG_0740_frfoq7.jpg);
+  width: 100%;
+  height: 350px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+
+.paula-banner-galeria img {
+margin-top: -80px;
+width: 100%;
+
+}
+
+#title-galeria {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: white;
+  margin-top: -250px;
+  overflow:scroll;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.paula-banner-galeria .fa-angle-down {
+  color: white;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  margin-left: -200px;
+}
+
+
+.sbi_header_text {
+  margin-left: 70px;
+}
+
+.sbi_header_text li {
+  display: inline-block;
+}
+
+.sbi_header_text li:hover {
+  text-decoration: none;
+}
+
+.sbi_header_text img {
+  border-radius: 50%;
+}
+
+.col-sm-6 img {
+  width: 360px;
+  height: 250px;
+  margin-bottom: 20px;
+}
+
+
+
+
+.insta .fa {
+  font-size: 20px;
+  color: white;
+  margin-left: -40px;
+}
+
+.insta a {
+  background-color: gray;
+  padding: 10px 20px 10px 20px;
+  color: white;
+  border-radius: 3px;
+  font-size: 18px;
+}
+
+.insta a:hover{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,42 @@
+
+<div class="container">
+  <h2>Nous contacter</h2>
+<br>
+<br>
+<br>
+<br>
+
+<%= form_for Contact.new, url: contact_path do |message_form| %>
+  <fieldset>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <%= message_form.text_field :name, placeholder: "Name", required: true , :class =>"form-control contact-form-last" %>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <%= message_form.email_field :email, placeholder: "Email", required: true, :class =>"form-control contact-form-last"%>
+      </div>
+    </div>
+    <div class="form-group">
+       <%= message_form.text_area :subject, placeholder: "Subject", required: true,  :class =>"form-control contact-form-last" %>
+    </div>
+    <div class="form-group">
+     <%= message_form.text_area :content, placeholder: "Message", required: true,  as: :text, :input_html => { class: 'test', :cols => 53, :rows => 22 } %>
+    </div>
+    <div class="form-group">
+
+      <%= recaptcha_tags %>
+          </div>
+
+    <br>
+    <br>
+      <fieldset>
+        <%= message_form.submit "Envoyer", :class =>"btn btn-warning",  large:"100px" %>
+      </fieldset>
+    </div>
+  </fieldset>
+<% end %>
+
+</div>
+</div>

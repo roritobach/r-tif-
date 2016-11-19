@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Capacite:</strong>
+  <%= @table.capacite %>
+</p>
+
+<p>
+  <strong>Numero:</strong>
+  <%= @table.numero %>
+</p>
+
+<p>
+  <strong>Reserver:</strong>
+  <%= @table.reserver %>
+</p>
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>

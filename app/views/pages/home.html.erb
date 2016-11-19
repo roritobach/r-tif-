@@ -1,0 +1,94 @@
+ <!-- ********************** BANNER ********************* -->
+
+<div class="banner paula-banner" id="top">
+<!--<video controls>
+  <source src="MVI_4615.Mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+</video>-->
+<%= image_tag 'http://res.cloudinary.com/roritobach/image/upload/v1479526058/IMG_1899_e7k8g7.jpg' %>
+
+</div>
+
+
+<!-- ********************** DESCRIPTION ********************** -->
+<div id="startchange">
+<div class="description">
+<br><br><br><br><br><br>
+ <div class="container" id="go">
+  <div class="row" >
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag 'http://res.cloudinary.com/roritobach/image/upload/v1479525867/description1_j7snkx.jpg' %>
+    </div>
+    <div class="col-xs-12 col-sm-6 text-center">
+    <br><br>
+      <h2>El Restaurante</h2>
+      <br><br>
+      <p id="description1">Un elegante Restaurante frente al mar, ubicado en el centro del famoso Casco Antiguo, Panama.
+      <br>
+      Una Cocina Mediteranea con saber y inspiracion francesa, Paula Nani les ofrece un lugar de calidad, de buena ambiente, musica traida de Europa, acompanado de su selecion precisa de vinos, y cocteles.</p>
+      <br>
+      <B><%= link_to "Ver el Menu", menu_path, id: "menu-btn"  %></B>
+      <br>
+    </div>
+  </div>
+
+<br><br><br>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 text-center">
+    <br><br>
+      <h2>El servicio</h2>
+      <br><br>
+      <p>Abierto todo los dias de la semana, el Restaurant abre sus puertad a 12 del dia y cierra a media noche, con un servicio de cocina abierta en cualquier momento del día.</p>
+      <br>
+      <B><%= link_to "Reservar", new_booking_path, id: "reserva-btn"  %></B>
+      <br>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag 'http://res.cloudinary.com/roritobach/image/upload/v1479526085/banner2_lbqf34.jpg' %>
+    </div>
+  </div>
+
+<br><br><br>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <%= image_tag 'http://res.cloudinary.com/roritobach/image/upload/v1479526121/b3_vpevre.jpg' %>
+    </div>
+    <div class="col-xs-12 col-sm-6 text-center">
+    <br><br>
+      <h2>El lugar</h2>
+      <br><br>
+      <p>El Restaurant ofrece una posibilidad variada de eventos, cumpleanos, bodas y mucho mas, por medio de su grande espacio al aire libre.</p>
+      <br>
+      <B><%= link_to "Eventos", evento_path, id: "evento-btn"  %></B><br>
+      <br><br><br><br>
+    </div>
+  </div>
+
+  </div>
+
+
+<br><br><br><br>
+
+  <%= form_for Newletter.new, url: newletter_path do |message_form| %>
+  <fieldset>
+    <div class="col-xs-offset-2 col-xs-8 text-center">
+    <h1>Newsletter</h1>
+    <br><br>
+    <p>Para informarles de nuetros acontecimientos y actualidades, suscribete a nuestra Newsletter </p>
+    <br><br>
+      <div class="form-group news">
+        <ul>
+        <li class="news-form-mail"><%= message_form.text_field :email, placeholder: "Email", required: true , :class =>"form-control" %></li>
+        <li><%= message_form.submit "Envoyer", :class =>"btn btn-warning",  large:"100px" %></li>
+        </ul>
+      </div>
+    </div>
+    </fieldset>
+    <% end %>
+
+<br>
+
+ </div>
+</div>

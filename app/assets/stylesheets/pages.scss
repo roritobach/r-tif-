@@ -1,0 +1,292 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* Navbar */
+
+.navbar-paula {
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.07),0 0px 0 0 rgba(0,0,0,0.03);*/
+  background-color: transparent;
+ /* transition: all 0.3s ease;*/
+  display: flex;
+  height: 130px;
+  padding: 0px 30px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+  width: 100%;
+  font-weight: normal;
+  color: white;
+}
+
+/* Navbar logo */
+.navbar-logo-brand {
+  width: 60px;
+  height: auto;
+}
+
+.navbar-center-logo img {
+  width: 70px;
+  margin-left: 151px;
+}
+
+#first-link{
+  margin-left: 460px;
+}
+
+/* Navbar right section (with form, links, button) */
+.navbar-paula-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Navbar item */
+.navbar-paula-item {
+  flex: 0 1 auto;
+  cursor: pointer;
+  padding: 0 40px;
+    margin-top: 55px;
+}
+
+.navbar-paula-item .avatar {
+  margin-left: 105px;
+  margin-right: 25px;
+  width: 40px;
+  height: 40px;
+}
+
+/* Navbar standard link */
+.navbar-paula-link {
+
+  font-size: 15px;
+  font-weight: bold;
+}
+.navbar-paula-link:hover {
+  color: #D1B182;
+  text-decoration: none;
+}
+
+
+/* Navbar dropdown menu */
+
+.little-menu {
+  margin-left: 280px;
+}
+
+
+.navbar-paula-dropdown-menu {
+  margin-top: 15px;
+  box-shadow: 1px 1px 4px #E6E6E6;
+  border-color: #E6E6E6;
+}
+.navbar-paula-dropdown-menu li > a {
+  transition: color 0.3s ease;
+  font-weight: lighter !important;
+  color: #999999 !important;
+  font-size: 15px !important;
+  line-height: 22px !important;
+  padding: 10px 20px;
+}
+.navbar-paula-dropdown-menu li > a:hover {
+  background: transparent !important;
+  color: black !important;
+}
+.navbar-paula-dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 10px;
+  top: -6px;
+  background-color: white;
+  transform: rotate(45deg);
+  border-left: 1px solid #E6E6E6;
+  border-top: 1px solid #E6E6E6;
+}
+
+#logo-paula{
+  width:230px;
+  height: auto;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+
+.dropdown-toggle1:hover {
+  color: #FF8C42;
+}
+
+
+.dropdown-toggle1:hover {
+  color: #FF8C42;
+}
+
+
+
+
+
+.navbar-paula {
+  transition: 0.2s all linear;
+}
+
+.active { background-color: black}
+
+
+
+
+
+
+/* Banner */
+
+.paula-banner {
+  /*background-image: url(IMG_1915.JPG);*/
+  width: 100%;
+  height: 800px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -50px;
+}
+
+.paula-banner img {
+margin-top: -80px;
+width: 100%;
+
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: white;
+  margin-top: 500px;
+}
+
+.paula-banner .fa-angle-down {
+  color: white;
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  margin-left: -200px;
+}
+
+
+
+
+
+video {
+  width: 100%;
+  height: 1000px;
+  margin-top: -150px;
+}
+
+
+
+
+
+
+
+/* Description */
+
+.description {
+  background-image: url(test6.png);
+  background-attachment: fixed;
+  background-size: 100%;
+  height:1400px;
+  width:100%;
+}
+
+/*
+#go {
+  overflow:scroll;
+}*/
+
+.description img {
+  width: 100%;
+}
+
+.description h2 {
+  text-transform: uppercase;
+}
+
+.description p {
+  line-height: 28px;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #454749;
+  font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************** FOOTER HOME **************/
+
+.footer-home {
+  background-color: black;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 90px;
+}
+
+.footer-home h3 {
+  text-transform: uppercase;
+  color: #D1B182;
+}
+
+.footer-home p {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************** FOOTER *****************/
+
+  .footer {
+    background: gray;
+    color: white;
+    position: relative; left: 0; right: 0; bottom: 0px; width: 100%;
+    height: 100%;
+  }
+
+      /**** Logos links ****/
+
+      .list-inline .fa {
+        font-size: 25px;
+        letter-spacing: 1px;
+        color: white;
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+
+      .fa:hover {
+        color: #FF8C42;
+      }
+
+      .text-right {
+        margin-top: 20px;
+      }
+
+

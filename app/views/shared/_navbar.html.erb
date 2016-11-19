@@ -1,0 +1,100 @@
+
+
+<!-- ************************ Navbar ************************* -->
+
+<div class="navbar-paula" id="navbar">
+  <!-- Logo -->
+  <div class="navbar-paula-brand" id="logo-pn">
+    <%= link_to root_path do %>
+      <%= image_tag 'http://res.cloudinary.com/roritobach/image/upload/v1479526066/Logo-PaulaNani-vector-blanc_uyx03z.png' %>
+    <% end %>
+  </div>
+
+
+  <!-- Right Navigation -->
+  <div class="navbar-paula-right hidden-xs hidden-sm">
+        <a> <%= link_to "Home", root_path, class: "navbar-paula-item" %> </a>
+        <a><%= link_to "Menu", menu_path, class: "navbar-paula-item"  %>  </a>
+        <a><%= link_to "Galería", realisations_path, class: "navbar-paula-item" %> </a>
+        <a><%= link_to "Eventos", evento_path, class: "navbar-paula-item" %></a>
+        <a><%= link_to "Reservas", new_booking_path, class: "navbar-paula-item" %></a>
+        <a><%= link_to "Contacto", new_contact_path, class: "navbar-paula-item" %></a>
+  </div>
+
+
+
+<!-- Dropdown list appearing on mobile only -->
+  <div class="navbar-paula-item hidden-md hidden-lg little-menu">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-paula-dropdown-menu">
+        <li><a> <%= link_to "Home", root_path, class: "navbar-paula-link" %> </a></li>
+        <li><a><%= link_to "Menu", menu_path, class: "navbar-paula-link"  %>  </a></li>
+        <li><a><%= link_to "Galería", realisations_path, class: "navbar-paula-link"  %>  </a></li>
+        <li><a><%= link_to "Eventos", evento_path, class: "navbar-paula-link"  %>  </a></li>
+        <li><a><%= link_to "Reservas", new_booking_path, class: "navbar-paula-link"  %>  </a></li>
+        <li><a><%= link_to "Contacto", new_contact_path, class: "navbar-paula-link"  %>  </a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script type="text/javascript" src="test.js"></script>
+
+
+
+
+
+<script>
+
+
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#top');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-paula").css('background-color', 'transparent').css('box-shadow', '0 0px 0px 0 rgba(0,0,0,0.07),0 0px 0 0 rgba(0,0,0,0.03)');
+          $(".navbar-paula-item").css('color', 'white');
+          $(".navbar-paula-brand img").attr("src" , "<%= image_path 'http://res.cloudinary.com/roritobach/image/upload/v1479526066/Logo-PaulaNani-vector-blanc_uyx03z.png' %>");
+          $(".little-menu").css('color', 'white');;
+       }
+   });
+    }
+});
+
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+    if (startchange.length){
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $(".navbar-paula").css('background-color', 'white');
+          $(".navbar-paula-item").css('color', 'black');
+          $(".navbar-paula-brand img").attr( "src" , "<%= image_path 'http://res.cloudinary.com/roritobach/image/upload/v1479525869/logo-pn-black_qznsvf.png' %>" );
+          $(".little-menu").css('color', 'black');
+;
+       }
+   });
+    }
+
+});
+
+
+
+</script>
+

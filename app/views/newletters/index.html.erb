@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Newletters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @newletters.each do |newletter| %>
+      <tr>
+        <td><%= newletter.email %></td>
+        <td><%= link_to 'Show', newletter %></td>
+        <td><%= link_to 'Edit', edit_newletter_path(newletter) %></td>
+        <td><%= link_to 'Destroy', newletter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Newletter', new_newletter_path %>

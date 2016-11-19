@@ -1,0 +1,16 @@
+<%= simple_form_for(@contact) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+        <td><%= f.input :name, required: true, :label => "Nombre" %></td>
+        <td><%= f.input :email,  required: true %></td>
+        <td><%= f.input :subject,  required: true, :label => "Tema" %></td>
+        <td><%= f.input :content,  required: true, :label => "Mensaje",  as: :text, :input_html => { class: 'test', :cols => 25, :rows => 10 } %>
+  </div>
+
+<br>
+
+  <div class="form-actions text-center">
+    <%= f.button :submit, class: "btn btn-default" %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Newletter < ApplicationRecord
+end
